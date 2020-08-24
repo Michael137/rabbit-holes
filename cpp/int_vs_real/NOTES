@@ -1,0 +1,11 @@
+# Observations
+1. libstdc++/clang++: float >> int
+2. libc++/clang++: float < int
+3. libstdc++/g++: float < int
+4. libc++/clang++ (float, int8) <<< libstdc++/g++ (float, int8)
+
+# TODO
+1. Plot distributions
+2. Write comparison snippets
+3. Assembly
+4. Profile
