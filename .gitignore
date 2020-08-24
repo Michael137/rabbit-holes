@@ -2,3 +2,7 @@
 *.out
 *.data
 *.old
+
+*.csv
+*.dSYM/
+.ipynb_checkpoints/
