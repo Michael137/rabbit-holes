@@ -20,14 +20,14 @@ template<typename T> std::vector<T> create_data( int num_elements )
 {
 	if constexpr( std::is_same_v<T, float> )
 		return generate_random<float>(
-		    std::uniform_real_distribution<float>( -128.0f, 128.0f ),
+		    std::uniform_real_distribution<float>( -128.0f, 127.0f ),
 		    num_elements );
 	if constexpr( std::is_same_v<T, int32_t> )
 		return generate_random<int32_t>(
-		    std::uniform_int_distribution<int32_t>( -128, 128 ), num_elements );
+		    std::uniform_int_distribution<int32_t>( -128, 127 ), num_elements );
 	if constexpr( std::is_same_v<T, int8_t> )
 		return generate_random<int8_t>(
-		    std::uniform_int_distribution<int32_t>( -128, 128 ), num_elements );
+		    std::uniform_int_distribution<int32_t>( -128, 127 ), num_elements );
 }
 
 int main()
