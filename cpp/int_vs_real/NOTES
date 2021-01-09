@@ -1,8 +1,13 @@
 # Observations
-1. libstdc++/clang++: float >> int
+1. libstdc++/clang++: float >> int (and int is faster than with libc++/libc++)
 2. libc++/clang++: float < int
 3. libstdc++/g++: float < int
-4. libc++/clang++ (float, int8) <<< libstdc++/g++ (float, int8)
+4. libc++/clang++ (float, int8) >>> libstdc++/g++ (float, int8)
+
+# Questions
+(4): why is libstdc++ so much better at sampling from int?
+(2-3): why is sampling from a float distribution faster than int?
+(1): why the inverted profile?
 
 # TODO
 1. Plot distributions
